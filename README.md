@@ -1,6 +1,4 @@
-### README.md
 
-```markdown
 # 🛠️ Pentesting Automation Script 🚀
 
 Welcome, hacker enthusiasts! 🎩✨ This repository contains a bash script that automates the setup of essential penetration testing tools on your **Debian-based distro** (Ubuntu, Kali, ParrotOS, and friends). Whether you’re diving into cybersecurity for the first time or setting up your battle station for the nth time, this script has got you covered. 🖥️🔐
