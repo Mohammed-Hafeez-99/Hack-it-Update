@@ -3,6 +3,9 @@
 # Update the system
 echo "Updating the system..."
 sudo apt update && sudo apt upgrade -y
+#group tools accordig to category and prompt for installing the tools.
+#steganography tools
+sudo apt-get install -y steghide
 
 # Install essential tools
 echo "Installing essential tools..."
@@ -33,9 +36,12 @@ echo "Installing Python and Pip..."
 sudo apt install -y python3 python3-pip
 pip3 install requests beautifulsoup4
 
-# Install Tor Browser
-echo "Installing Tor Browser..."
-sudo apt install -y tor
+#Install Tor Browser
+:'hardening Firefox is better option Tor is slow..
+finding a suitable one feom the open repos'
+#to add an a prompt here for hardened firefox...
+#echo "Installing Tor Browser..."
+#sudo apt install -y tor
 
 # Install a Sniffer
 echo "Installing tcpdump..."
@@ -90,6 +96,7 @@ sudo ./msfinstall
 # sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 # sudo apt update
 # sudo apt install -y code
+
 sudo apt update
 sudo apt install -y software-properties-common
 sudo add-apt-repository universe
@@ -97,6 +104,13 @@ wget -qO - https://apt.metasploit.com/metasploit-framework.gpg.key | sudo apt-ke
 echo "deb https://apt.metasploit.com/ $(lsb_release -c | awk '{print $2}') main" | sudo tee /etc/apt/sources.list.d/metasploit-framework.list
 sudo apt update
 sudo apt install -y metasploit-framework
-
+#some addition...
+sudo apt install net-tools
+#regex-chain tools(For manipulating files..)
+sudo apt install sed
+sudo apt install gawk
+#hashdump tools (For CTF evevts)
+sudo apt install xxd
+#is a hash file viewer and converter useful for cryptography.
 
 echo "Setup complete! Your Debian-based system is now configured for penetration testing."
