@@ -3,6 +3,9 @@
 # Update the system
 echo "Updating the system..."
 sudo apt update && sudo apt upgrade -y
+#group tools accordig to category and prompt for installing the tools.
+#steganography tools
+sudo apt-get install -y steghide
 
 # Install essential tools
 echo "Installing essential tools..."
@@ -108,5 +111,6 @@ sudo apt install sed
 sudo apt install gawk
 #hashdump tools (For CTF evevts)
 sudo apt install xxd
+#is a hash file viewer and converter useful for cryptography.
 
 echo "Setup complete! Your Debian-based system is now configured for penetration testing."
