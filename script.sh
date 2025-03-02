@@ -112,5 +112,14 @@ sudo apt install gawk
 #hashdump tools (For CTF evevts)
 sudo apt install xxd
 #is a hash file viewer and converter useful for cryptography.
+#common ip tools
+#route-tracer
+sudo apt install -y traceroute
+#domain-info
+sudo apt-get install whois
+#digital foorensics tools
+sudo apt install poppler-utils
+#photo tool
+sudo apt install libimage-exiftool-perl 
 
 echo "Setup complete! Your Debian-based system is now configured for penetration testing."
